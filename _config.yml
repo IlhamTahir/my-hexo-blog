@@ -12,8 +12,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://ilhamtahir.github.io
-root: /
+url: https://www.ilhamtahir.com
+root: / 
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -46,6 +46,8 @@ highlight:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  - Sports
+  - Baseball
 tag_map:
 
 # Date / Time format
@@ -63,11 +65,14 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: anodyne
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: git@github.com:IlhamTahir/ilhamtahir.github.io.git
-  branch: master
+  - type: git
+    repo: git@github.com:IlhamTahir/ilhamtahir.github.io.git
+    branch: master
+  - type: git
+    repo: git@git.coding.net:bilig/my-blog.git
+    branch: coding-pages
